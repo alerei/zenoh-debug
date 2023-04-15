@@ -16,6 +16,6 @@ add_custom_target(
 
 # zenoh-c
 add_library(external.zenoh-c SHARED IMPORTED GLOBAL)
-set_property(TARGET external.zenoh-c PROPERTY IMPORTED_LOCATION ${ZENOH_C_DIR}/out/lib/libzenohc.so)
+set_property(TARGET external.zenoh-c PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/out/lib/libzenohc.so)
 set_property(TARGET external.zenoh-c PROPERTY IMPORTED_NO_SONAME TRUE)
-set_property(TARGET external.zenoh-c PROPERTY INTERFACE_INCLUDE_DIRECTORIES ${ZENOH_C_DIR}/out/include)
+set_property(TARGET external.zenoh-c PROPERTY INTERFACE_INCLUDE_DIRECTORIES ${CMAKE_CURRENT_SOURCE_DIR}/out/include)

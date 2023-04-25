@@ -1,4 +1,4 @@
-prefix=/home/alex/dev/zenoh-debug/external/out
+prefix=/root/zenoh-debug/external/out
 
 Name: zenohc
 Description: The C bindings for Zenoh
